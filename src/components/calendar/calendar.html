@@ -1,0 +1,24 @@
+<!-- Generated template for the CalendarComponent component -->
+<div id='calendar'>
+  <div id='header'>
+    <button class='clickbtn' (click)='clickPrevious()' [disabled]='this.displayDate.getFullYear()===this.minYear&&this.displayDate.getMonth()==0'>
+      <<</button> 
+      <select (change)='selectMonth($event)'>
+        <option *ngFor='let m of month; let i=index' value='{{i}}' [selected]='displayDate.getMonth()==i'>{{m}}</option>
+        </select>
+        <select (change)='selectYear($event)'>
+          <option *ngFor='let y of Year' value='{{y}}' [selected]='y==displayDate.getFullYear()'>{{y}}</option>
+        </select>
+        <button class='clickbtn' (click)='clickNext()' [disabled]='this.displayDate.getFullYear()==this.maxYear&&this.displayDate.getMonth()==11'>>></button>
+  </div>
+  <table id='table' no-padding>
+    <thead>
+      <th *ngFor='let d of day'>{{d}}</th>
+    </thead>
+    <tbody>
+      <tr *ngFor='let week of obj'>
+        <td *ngFor='let day of week'><button class='button' *ngIf='day' (click)='alert(day)'>{{day}}</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

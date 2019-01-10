@@ -1,0 +1,56 @@
+calendar {
+    .button {
+        background-color: yellow; /* Green */
+        border-style: solid;
+        border-width: 1px;
+        border-radius:100%;
+        width:25px;
+        height:25px;
+        padding:2px;
+        color: black;
+        padding: 2px 3px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+      }
+    #table{
+        width:250px;
+        display: inline-block;
+        table-layout: fixed;
+        border-style: none;
+        border-width: 1px;
+        text-align: center;
+        padding:10px;
+        td{
+            background-color: white;
+            width:100px;
+            table-layout: fixed;
+            text-align: center;
+        }
+    }
+
+    .clickbtn{
+        text-align: center;
+        border-style:solid;
+        shape-margin: 10%;
+        border-width: 2px;
+        background-color:skyblue;
+        box-shadow: 10px;
+        width: 30px;
+    }
+
+    #calendar{
+        width:auto;
+        height:auto;
+        border-style:groove;
+        text-align: center;
+    }
+
+    #header{
+        padding:10px;
+        display: inline-block;
+        
+    }
+
+}
